@@ -1,0 +1,56 @@
+{
+  "name": "backend",
+  "version": "2.0.0",
+  "description": "Dataplatform backend API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.7.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.0.2",
+    "path": "^0.12.7",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "prettier"
+    ],
+    "env": {
+      "commonjs": true,
+      "es6": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "semi": true,
+          "singleQuote": true,
+          "trailingComma": "none"
+        }
+      ],
+      "arrow-body-style": "off",
+      "prefer-arrow-callback": "off"
+    },
+    "plugins": [
+      "prettier"
+    ]
+  }
+}
